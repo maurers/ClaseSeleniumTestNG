@@ -1,6 +1,5 @@
 package com.qalabs.javabasics.googleproject.page;
 
-import com.qalabs.javabasics.googleproject.components.ResultItem;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +7,7 @@ import org.openqa.selenium.support.How;
 
 import java.util.List;
 
-public class GoogleResultsPage extends BasePage {
+public class GoogleResultsPage extends BasePage implements Page {
 
   @FindBy(how = How.NAME, using = "q")
   private WebElement searchBox;
@@ -16,7 +15,7 @@ public class GoogleResultsPage extends BasePage {
   @FindBy(how = How.XPATH, using = "//*[@aria-label='Buscar con Google']")
   private WebElement searchButton;
 
-  @FindBy(how = How.XPATH, using = "//*[@id='rso']//*[@class='g']")
+  @FindBy(how = How.XPATH, using = "//[@id='rso']//[@class='g']")
   private List<WebElement> results;
 
   @FindBy(how = How.ID, using = "pnnext")
@@ -26,31 +25,45 @@ public class GoogleResultsPage extends BasePage {
   private WebElement prevButton;
 
   public GoogleResultsPage(WebDriver driver) {
-    super (driver, driver.getCurrentUrl());
+    super();
+    BasePage myPage = new BasePage() {
+      @Override
+      public void open() {
+        super.open();
+      }
+    };
+    myPage.open();
+
   }
 
-  public GoogleResultsPage search(String searchTxt) {
+  public GoogleResultsPage search(String searchTxt){
     // Add Code
+    this.searchBox.sendKeys(searchTxt);
+    this.searchButton.click();
+    return null;
   }
 
-  public String currentSearch() {
+  public void CurrentSearch(String SearchTxt) {
     // Add Code
+    this.results.contains(SearchTxt);
+    return;
   }
 
-  public List<ResultItem> getResults() {
+  public void getResults(){
     // Add Code
+    this.results.contains(searchButton);
+    return;
   }
 
   public void nextResultPage() {
-    // Add Code
+    // Add Codes
+    this.nextButton.click();
+    return;
   }
 
   public void prevResultPage() {
-   // Add Code
-  }
-
-  @Override
-  public boolean isLoaded() {
     // Add Code
+    this.prevButton.click();
+    return;
   }
 }
