@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 
 import java.util.List;
 
-public class GoogleResultsPage extends BasePage {
+public class GoogleResultsPage extends BasePage implements Page {
 
   @FindBy(how = How.NAME, using = "q")
   private WebElement searchBox;
