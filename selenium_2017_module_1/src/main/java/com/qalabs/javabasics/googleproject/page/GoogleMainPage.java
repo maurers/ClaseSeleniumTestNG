@@ -19,7 +19,7 @@ public class GoogleMainPage extends BasePage implements Page{
   private WebElement doodle;
 
   public GoogleMainPage(WebDriver driver) {
-    super(driver, "");
+    super();
     //this.doodle.submit();
   }
   public GoogleResultsPage searchInGoogle(String searchTxt) {

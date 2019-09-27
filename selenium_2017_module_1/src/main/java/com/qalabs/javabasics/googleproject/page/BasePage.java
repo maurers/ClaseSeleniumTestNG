@@ -8,7 +8,7 @@ public abstract class BasePage implements Page{
   protected String baseUrl;
   //protected final Logger logger = Logger.getLogger(BasePage.class);
 
-  public BasePage(WebDriver driver, String baseUrl) {
+  public BasePage() {
     this.driver = driver;
     this.baseUrl = baseUrl;
     PageFactory.initElements(driver, this);

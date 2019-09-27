@@ -14,7 +14,7 @@ public class GoogleExampleTest extends BasePage {
   private GoogleResultsPage resultsPage;
 
   public GoogleExampleTest(WebDriver driver, String baseUrl) {
-    super(driver, baseUrl);
+    super();
   }
 
   @BeforeClass
