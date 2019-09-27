@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/components/BaseElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/components/ResultItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/page/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/page/GoogleMainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/page/GoogleResultsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qalabs/javabasics/googleproject/page/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/googleproject/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/googleproject/GoogleExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/testngexamples/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/testngexamples/TestNGExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qalabs/seleniumbasics/testngexamples/TestNGExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TEstNGExample1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium2017.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium2017.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e4f23a5a-af49-47fe-9337-215d8e761898" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,6 +271,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
