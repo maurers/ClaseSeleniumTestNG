@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 public abstract class BasePage implements Page{
   protected WebDriver driver;
   protected String baseUrl;
-  //protected final Logger logger = Logger.getLogger(BasePage.class);
+  protected final Logger logger = Logger.getLogger(BasePage.class);
 
   public BasePage() {
     this.driver = driver;
@@ -16,7 +16,8 @@ public abstract class BasePage implements Page{
 
   public void open() {
     //logger.info("Getting url: " + this.baseUrl);
-    this.driver.get(this.baseUrl);
+      this.driver= WebDriverFactory.getDriver(this.driver);
+      this.driver.get(this.baseUrl);
     //logger.info("Got: " + this.driver.getCurrentUrl());
   }
 

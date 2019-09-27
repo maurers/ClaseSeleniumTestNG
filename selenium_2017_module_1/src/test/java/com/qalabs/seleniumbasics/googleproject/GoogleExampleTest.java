@@ -3,7 +3,6 @@ package com.qalabs.seleniumbasics.googleproject;
 import com.qalabs.javabasics.googleproject.page.BasePage;
 import com.qalabs.javabasics.googleproject.page.GoogleMainPage;
 import com.qalabs.javabasics.googleproject.page.GoogleResultsPage;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

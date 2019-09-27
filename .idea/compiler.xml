@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+<<<<<<< HEAD
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -9,6 +10,8 @@
         <module name="selenium_2017_module_1" />
       </profile>
     </annotationProcessing>
+=======
+>>>>>>> 4033a9e207ca57044511833fa0d89fe2afca60e3
     <bytecodeTargetLevel>
       <module name="ClaseSeleniumTestNG" target="8" />
     </bytecodeTargetLevel>
