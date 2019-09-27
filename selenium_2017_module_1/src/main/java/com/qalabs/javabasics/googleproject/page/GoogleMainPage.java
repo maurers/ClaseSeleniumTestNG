@@ -18,19 +18,37 @@ public class GoogleMainPage extends BasePage {
   @FindBy(how = How.ID, using = "hplogo")
   private WebElement doodle;
 
-  public GoogleMainPage(WebDriver driver) {
-    super(driver, "");
-    //this.doodle.submit();
-  }
-  public GoogleResultsPage searchInGoogle(String searchTxt) {
-    // Add Code
-  }
-  public GoogleResultsPage feelingLuckySearch(String searchTxt) {
-    // Add Code
-  }
+    public GoogleMainPage(WebDriver driver) {
+        super(driver, "");
+        //this.doodle.submit();
+        BasePage myPage = new BasePage();
+        myPage.open();
+    }
+    public GoogleResultsPage searchInGoogle(String searchTxt){
+        // Add Code
+        this.searchBox.sendKeys(searchTxt);
+        this.searchInGoogleButton.click;
+        return null;
+    }
+    public GoogleResultsPage feelingLuckySearch(String searchTxt){
+        // Add Code
+        this.searchBox.sendKeys(searchTxt);
+        this.feelingLuckyButton.click;
+        return null;
+    }
 
-  @Override
-  public boolean isLoaded(){
-    // Add Code
-  }
+    @Override
+    public boolean isLoaded(){
+        // Add Code
+        String cadena1="";
+        String cadena2="";
+        cadena1=myPage.this.driver.getCurrentUrl();
+        Cadena2="https://www.google.com.mx/";
+        if (cadena1.equals(cadena2)){
+            return false;
+        }
+        else {
+            return false;
+        }
+    }
 }

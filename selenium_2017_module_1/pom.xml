@@ -8,8 +8,7 @@
     <artifactId>selenium_2017_module_1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
+        <dependency>            <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.6.0</version>
         </dependency>

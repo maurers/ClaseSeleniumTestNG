@@ -16,7 +16,8 @@ public abstract class BasePage implements Page{
 
   public void open() {
     //logger.info("Getting url: " + this.baseUrl);
-    this.driver.get(this.baseUrl);
+      this.driver= WebDriverFactory.getDriver(this.driver);
+      this.driver.get(this.baseUrl);
     //logger.info("Got: " + this.driver.getCurrentUrl());
   }
 
