@@ -40,12 +40,13 @@ public class GoogleMainPage extends BasePage {
     @Override
     public boolean isLoaded(){
         // Add Code
+        BasePage myBase = new BasePage();
         try{
             WebDriverWait wait= new  WebDriverWait(driver, 10);
             wait.until(ExceptionConditions.VisibilityOf(double));
-            logger.info("Google main page loaded");
+            myBase.logger.info("Google main page loaded");
         }catch(RunttimeException exception){
-            logger.error("Google main page was not load;"+ exception)
+            myBase.logger.error("Google main page was not load;"+ exception)
         }
     }
 }
