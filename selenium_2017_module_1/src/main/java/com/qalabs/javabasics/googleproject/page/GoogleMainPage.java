@@ -25,13 +25,11 @@ public class GoogleMainPage extends BasePage {
         myPage.open();
     }
     public GoogleResultsPage searchInGoogle(String searchTxt){
-        // Add Code
         this.searchBox.sendKeys(searchTxt);
         this.searchInGoogleButton.click;
         return null;
     }
     public GoogleResultsPage feelingLuckySearch(String searchTxt){
-        // Add Code
         this.searchBox.sendKeys(searchTxt);
         this.feelingLuckyButton.click;
         return null;
@@ -39,14 +37,15 @@ public class GoogleMainPage extends BasePage {
 
     @Override
     public boolean isLoaded(){
-        // Add Code
         BasePage myBase = new BasePage();
         try{
             WebDriverWait wait= new  WebDriverWait(driver, 10);
             wait.until(ExceptionConditions.VisibilityOf(double));
             myBase.logger.info("Google main page loaded");
+            return true;
         }catch(RunttimeException exception){
-            myBase.logger.error("Google main page was not load;"+ exception)
+            myBase.logger.error("Google main page was not load;"+ exception);
+            return false;
         }
     }
 }
