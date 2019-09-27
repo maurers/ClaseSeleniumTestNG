@@ -40,15 +40,12 @@ public class GoogleMainPage extends BasePage {
     @Override
     public boolean isLoaded(){
         // Add Code
-        String cadena1="";
-        String cadena2="";
-        cadena1=myPage.this.driver.getCurrentUrl();
-        Cadena2="https://www.google.com.mx/";
-        if (cadena1.equals(cadena2)){
-            return false;
-        }
-        else {
-            return false;
+        try{
+            WebDriverWait wait= new  WebDriverWait(driver, 10);
+            wait.until(ExceptionConditions.VisibilityOf(double));
+            logger.info("Google main page loaded");
+        }catch(RunttimeException exception){
+            logger.error("Google main page was not load;"+ exception)
         }
     }
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 public abstract class BasePage implements Page{
   protected WebDriver driver;
   protected String baseUrl;
-  //protected final Logger logger = Logger.getLogger(BasePage.class);
+  protected final Logger logger = Logger.getLogger(BasePage.class);
 
   public BasePage(WebDriver driver, String baseUrl) {
     this.driver = driver;
