@@ -63,23 +63,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGExample2">
+  <component name="RunManager" selected="TestNG.GoogleExampleTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumExercise19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.SeleniumExercise19" />
-      <module name="Selenium2017" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qalabs.seleniumbasics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,6 +151,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoogleExampleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium2017" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qalabs.seleniumbasics.googleproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qalabs.seleniumbasics.googleproject" />
+      <option name="MAIN_CLASS_NAME" value="com.qalabs.seleniumbasics.googleproject.GoogleExampleTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestNGExample1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium2017" />
       <extension name="coverage">
@@ -221,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.assertions" />
-      <item itemvalue="Application.SeleniumExercise19" />
       <item itemvalue="Application.SeleniumExercise20" />
       <item itemvalue="TestNG.TestNGExample1" />
       <item itemvalue="TestNG.C:/BootcampJava/Selenium2/selenium_course_may_2018/selenium_2017_module_1/src/test/resources/TEstNGExample1.xml" />
       <item itemvalue="TestNG.TestNGExample2" />
+      <item itemvalue="TestNG.GoogleExampleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoogleExampleTest" />
         <item itemvalue="TestNG.TestNGExample2" />
         <item itemvalue="TestNG.C:/BootcampJava/Selenium2/selenium_course_may_2018/selenium_2017_module_1/src/test/resources/TEstNGExample1.xml" />
         <item itemvalue="TestNG.TestNGExample1" />
         <item itemvalue="Application.SeleniumExercise20" />
-        <item itemvalue="Application.SeleniumExercise19" />
       </list>
     </recent_temporary>
   </component>

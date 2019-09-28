@@ -22,7 +22,7 @@ public class ResultItem extends BaseElement {
 
   public void click() {
     // Add Code
-    // this.click();
+    this.click();
   }
   @Override
   public String toString() {

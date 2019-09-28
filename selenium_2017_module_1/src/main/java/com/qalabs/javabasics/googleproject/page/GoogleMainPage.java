@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleMainPage extends BasePage {
   @FindBy(how = How.NAME, using = "q")
@@ -20,7 +19,7 @@ public class GoogleMainPage extends BasePage {
   private WebElement doodle;
 
   public GoogleMainPage(WebDriver driver) {
-    super(driver, ""); // Falta definir la URL pero no la pongo porque no se si la vamos a traer de otro lado...
+    super(driver, "https://google.com.mx"); // Falta definir la URL pero no la pongo porque no se si la vamos a traer de otro lado...
 
     /* Esto lo comento por que no se si realmente lo vamos a necesitar -- Maurer
     BasePage myPage = new BasePage();
@@ -28,18 +27,27 @@ public class GoogleMainPage extends BasePage {
     */
   }
   public GoogleResultsPage searchInGoogle(String searchTxt){
+    this.searchBox.clear();
     this.searchBox.sendKeys(searchTxt);
-    this.searchInGoogleButton.click;
-    return null;
+    this.searchInGoogleButton.click();
+    return new GoogleResultsPage(this.driver);
   }
   public GoogleResultsPage feelingLuckySearch(String searchTxt){
+    this.searchBox.clear();
     this.searchBox.sendKeys(searchTxt);
-    this.feelingLuckyButton.click;
-    return null;
+    this.feelingLuckyButton.click();
+    return new GoogleResultsPage(this.driver);
   }
 
   @Override
   public boolean isLoaded(){
+    if (this.doodle.isDisplayed()) {
+      return(true);
+    } else {
+      return(false);
+    }
+
+    /*
     // hay que revisar esto más a detalle
     BasePage myBase = new BasePage();
     try{
@@ -47,10 +55,10 @@ public class GoogleMainPage extends BasePage {
       wait.until(ExceptionConditions.VisibilityOf(double));
       myBase.logger.info("Google main page loaded");
       return true;
-    }catch(RunttimeException exception){
+    }catch(RuntimeException exception){
       myBase.logger.error("Google main page was not load;"+ exception);
       return false;
-    }
+    } */
   }
 
 }
